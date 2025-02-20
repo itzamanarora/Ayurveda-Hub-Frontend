@@ -4,7 +4,8 @@
 
 /* Top Navbar  */
 .top-nav {
-    background-color: var(--primary-green-800);
+    background-color: var(--primary-green-700);
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,20 +34,21 @@
 .nav-mid{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100rem;
+    width: 90vw;
 }
 
 .nav-mid .heading{
     font-family: var(--font-Jost);
     font-weight: 600;
-    font-size: 2rem;
-    color: var(--primary-green-800);
+    font-size: 2.5rem;
+    color: var(--primary-green-700);
     text-align: center;
     letter-spacing: 5px;
     margin: 10;
     flex-grow: 1;
-    padding-left: 7rem;
+    padding-left: 5rem;
 }
 
 .nav-icons {
@@ -62,25 +64,27 @@
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary-brown-100);
+    /* width: 100vw; */
 }
 
 .nav ul {
     border-top: 1px solid black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 20px 0;
     list-style-type: none;
     margin: 0;
     gap: 40px;
-    width: 100rem;
+    width: 91%;
 }
 
 .nav ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-green-700);
     font-size: 1rem;
     font-family: var(--font-Judson);
 }
 .nav ul li a:hover {
-    color: rgb(97, 97, 97);
+    color: var(--primary-green-800);
 }
