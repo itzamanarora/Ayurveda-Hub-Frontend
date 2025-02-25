@@ -5,6 +5,7 @@
 
 .card1 {
     width: 15rem;
+    cursor: pointer;
     height: auto;
     background-color: var(--primary-brown-100);
     display: flex;
@@ -12,7 +13,7 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card1 img{
@@ -31,4 +32,32 @@
     padding: 0 0 1rem 0;
     font-size: 2rem;
     color: var(--primary-green-700);
+}
+
+
+/* Card 2 CSS Styling  */
+
+.card2 {
+    width: 15rem;
+    cursor: pointer;
+    height: auto;
+    background-color: var(--primary-green-700);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card2 img{
+    width: 100%;
+    height: auto;
+}
+
+.card2-heading{
+    font-family: var(--font-Lobster);
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--primary-brown-100);
 }

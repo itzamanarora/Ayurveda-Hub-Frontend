@@ -28,6 +28,7 @@ body {
     font-size: 1.4rem;
 }
 
+
 /* Category Card Styling  */
 
 .card-heading{
@@ -53,12 +54,42 @@ body {
     gap: 50px;
     padding: 2rem;
     text-align: center;
+    width: 100%;
+}
+
+  
+  .swiper {
+    width: 60%;
+    height: auto
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+/* Community card Styling  */
+
+.card2-container{
+    background-color: var(--primary-brown-100);
+    color: var(--primary-black-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 50px;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 .card-section {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 50px;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
