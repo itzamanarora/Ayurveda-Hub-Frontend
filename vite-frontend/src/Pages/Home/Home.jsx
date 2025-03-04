@@ -1,10 +1,10 @@
-import ImageSlider from "../Components/Image-Slider/ImageSlider";
-import NavTop from "../Components/NavBar/NavTop";
+import ImageSlider from "../../Components/Image-Slider/ImageSlider";
+import NavTop from "../../Components/NavBar/NavTop";
 import './Home.css'
 import Certificate from "./Certificate";
-import Mid_Bar from "../Components/Mid-bar/Mid_Bar";
-import Footer from "../Components/Footer/Footer";
-import Mid_Bar_Sale from "../Components/Mid-bar/Mid_Bar_Sale";
+import Mid_Bar from "../../Components/Mid-bar/Mid_Bar";
+import Footer from "../../Components/Footer/Footer";
+import Mid_Bar_Sale from "../../Components/Mid-bar/Mid_Bar_Sale";
 import Choose_what_to_solve from "./Choose_what_to_solve";
 import People_Trust_us from "./People_Trust_us";
 

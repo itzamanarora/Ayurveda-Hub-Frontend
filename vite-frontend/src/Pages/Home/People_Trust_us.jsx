@@ -1,4 +1,4 @@
-import Card_2 from "../Components/Card/Card_2";
+import Card_2 from "../../Components/Card/Card_2";
 import './Home.css'
 
 function People_Trust_us({ heading, subheading }) {

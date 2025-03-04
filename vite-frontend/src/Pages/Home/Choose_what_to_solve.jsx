@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 import './Home.css';
-import Card_1 from '../Components/Card/Card_1';
+import Card_1 from '../../Components/Card/Card_1';
 
 
 function Choose_what_to_solve({heading, subheading}) {
