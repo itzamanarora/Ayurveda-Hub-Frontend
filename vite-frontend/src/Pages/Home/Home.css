@@ -7,6 +7,19 @@ body {
     padding: 0;
 }
 
+/* Image Slider  */
+.image-slider {
+    margin: none;
+    padding: none;
+    height: 100vh;
+}
+
+.image-slider img {
+    width: 99.14vw;
+    height: 100vh;
+}
+
+
 /* Goverment Certification Styling  */
 .container{
     display: flex;
@@ -38,7 +51,7 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.car-subheading{
+.card-subheading{
     font-family: var(--font-Judson);
     font-weight: 100;
     color: var(--primary-grey-100);

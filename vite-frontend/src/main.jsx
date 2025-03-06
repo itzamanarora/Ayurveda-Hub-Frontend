@@ -1,9 +1,9 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Home from './Pages/Home/Home'
+import AppRoutes from './Routes/AppRoutes';
+import { StrictMode } from 'react';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Home />
-  </StrictMode>,
+    <AppRoutes />
+  </StrictMode>
 )

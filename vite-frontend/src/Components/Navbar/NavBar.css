@@ -40,14 +40,10 @@
 }
 
 .nav-mid .heading {
-    font-family: var(--font-Jost);
-    font-weight: 600;
-    font-size: 2.5rem;
-    color: var(--primary-green-700);
-    text-align: center;
-    letter-spacing: 5px;
-    flex-grow: 1;
-    padding-left: 5rem;
+    padding: 2rem;
+    text-decoration: none;
+    margin-left: 40rem;
+
 }
 
 .nav-icons {

@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import Card_2 from "../../Components/Card/Card_2";
-import './Home.css'
+import './Home.css';
 
 function People_Trust_us({ heading, subheading }) {
   return (
@@ -9,10 +10,30 @@ function People_Trust_us({ heading, subheading }) {
         <p className="car-subheading">{subheading}</p>
       </div>
       <div className="card-section">
-        <Card_2 src={'./Quiz.svg'} heading={`Quiz`} />
-        <Card_2 src={'./Doctor.svg'} heading={`Doctor`} />
-        <Card_2 src={'./EBook.svg'} heading={`Ebook`} />
-        <Card_2 src={'./Article.svg'} heading={`Articles`} />
+        <Link 
+          to={'quiz'}
+          style={{textDecoration:'none'}}
+          >
+            <Card_2 src={'./assets/img-quiz.svg'} heading={`Quiz`} ></Card_2>
+        </Link>
+        <Link 
+          to={'doctor'}
+          style={{textDecoration:'none'}}
+          >
+             <Card_2 src={'./assets/img-doctor.svg'} heading={`Doctor`} />
+        </Link>
+        <Link 
+          to={'ebook'}
+          style={{textDecoration:'none'}}
+          >
+            <Card_2 src={'./assets/img-ebook.svg'} heading={`Ebook`} />
+        </Link>
+        <Link 
+          to={'articles'}
+          style={{textDecoration:'none'}}
+          >
+            <Card_2 src={'./assets/img-article.svg'} heading={`Articles`} />
+        </Link>
       </div>
     </div>
   );

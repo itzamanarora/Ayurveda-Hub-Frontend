@@ -1,0 +1,71 @@
+@import url("../../Styles/global-color.css");
+@import url("../../Styles/global-fonts.css");
+
+.container-line,
+.container-line2,
+.container-line3 {
+  display: block;
+  background-color: var(--primary-white-100);
+  opacity: 0.3;
+  width: 80rem;
+  height: 1rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.container-line2 {
+  width: 85rem;
+  opacity: 0.5;
+}
+.container-line3 {
+  width: 90rem;
+  opacity: 0.8;
+}
+
+.error-container {
+  text-align: center;
+  margin: 0;
+  background-color: var(--primary-brown-100);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container1 {
+  display: flex;
+  background-color: var(--primary-white-100);
+  border-radius: 2rem;
+  height: 35rem;
+  padding: 50px;
+}
+
+.error-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+.error-code {
+  padding-top: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--primary-green-700);
+  margin: 0;
+}
+
+.error-message {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.error-description {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 30px;
+  max-width: 500px;
+}

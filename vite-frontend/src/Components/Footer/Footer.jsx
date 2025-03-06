@@ -1,6 +1,7 @@
 import React from "react";
 import { Phone, Mail, MapPin } from 'lucide-react';
 import "./Footer.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -34,10 +35,10 @@ function Footer() {
         <div className="footer-section">
           <h3>Categories</h3>
           <ul>
-            <li><a href="#">Shop All</a></li>
-            <li><a href="#">Hair Care</a></li>
-            <li><a href="#">Skin Care</a></li>
-            <li><a href="#">Health Care</a></li>
+            <li><Link to={'products'}>Shop All</Link></li>
+            <li><Link to={'products'}>Hair Care</Link></li>
+            <li><Link to={'products'}>Skin Care</Link></li>
+            <li><Link to={'products'}>Health Care</Link></li>
           </ul>
         </div>
 
