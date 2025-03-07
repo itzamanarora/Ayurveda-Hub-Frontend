@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import NavBar from '../Components/Navbar/NavBar';
 import Home from '../Pages/Home/Home';
 import Footer from '../Components/Footer/Footer';
@@ -8,7 +8,7 @@ import Products from '../Pages/Products/Products';
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route
                     path='/'
@@ -35,7 +35,7 @@ function AppRoutes() {
                     element={<ErrorPage />} 
                 />  {/* Handle Unknown Routes */}
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

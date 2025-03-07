@@ -15,7 +15,7 @@ function Home() {
 
       {/* Image Slider  */}
       <div className="image-slider">
-        <img src=".\assets\img-homeSection.jpg"></img>
+        <img src={`${import.meta.env.BASE_URL}.\assets\img-homeSection.jpg`}></img>
       </div>
 
       {/* Certificate  */}
