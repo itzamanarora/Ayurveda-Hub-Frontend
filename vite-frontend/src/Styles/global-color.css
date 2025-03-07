@@ -1,6 +1,7 @@
 
 :root {
-    --primary-red-100: red;
+    --primary-red-100: rgb(255, 0, 0);
+    --primary-red-200: rgb(209, 2, 2);
     --primary-green-700: #3A633C;
     --primary-green-800: #2c4b2b;
     --primary-green-900: #264228;
