@@ -1,0 +1,12 @@
+@import url('../../Styles/global-fonts.css');
+@import url('../../Styles/global-color.css');
+
+.logo {
+    font-family: var(--font-Jost);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--primary-green-700);
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: none;
+}

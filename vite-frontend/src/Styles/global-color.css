@@ -1,6 +1,12 @@
 
 :root {
-    --primary-green-800: #2c4b2b;
+    --primary-red-100: rgb(255, 0, 0);
+    --primary-red-200: rgb(209, 2, 2);
     --primary-green-700: #3A633C;
+    --primary-green-800: #2c4b2b;
+    --primary-green-900: #264228;
     --primary-brown-100: #FFF7E2;
+    --primary-white-100: #ffffff;
+    --primary-grey-100: #656565;
+    --primary-black-100: #000000;
 }
