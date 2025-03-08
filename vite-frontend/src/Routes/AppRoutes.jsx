@@ -11,7 +11,7 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route
-                    path='/'
+                    path='/Ayurveda-Hub-Frontend/'
                     element={
                         <>
                             <NavBar />
@@ -21,7 +21,7 @@ function AppRoutes() {
                     }
                 />
                 <Route
-                    path='/products'
+                    path='/Ayurveda-Hub-Frontend/products'
                     element={
                         <>
                             <NavBar />
@@ -31,7 +31,7 @@ function AppRoutes() {
                     }
                 />
                 <Route 
-                    path="*" 
+                    path="/Ayurveda-Hub-Frontend/*" 
                     element={<ErrorPage />} 
                 />  {/* Handle Unknown Routes */}
             </Routes>

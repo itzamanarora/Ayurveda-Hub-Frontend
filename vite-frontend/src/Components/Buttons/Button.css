@@ -1,29 +1,44 @@
-@import url('../../Styles/global-color.css');
-@import url('../../Styles/global-fonts.css');
+@import url("../../Styles/global-color.css");
+@import url("../../Styles/global-fonts.css");
 
 .button1 {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 12px 24px;
-    border-radius: 5px;
-    transition: 0.3s;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .button1:hover {
-    background-color: var(--primary-green-900);
-  }
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
 
-  .button2 {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 12px 24px;
-    transition: 0.3s;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .button1:hover {
-    background-color: var(--primary-green-900);
-  }
+.button1:hover {
+  background-color: var(--primary-green-900);
+}
+
+.button2 {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 24px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: var(--primary-green-900);
+}
+
+.button3 {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 9.5px 24px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-brown-100);
+}
+
+.button3:hover {
+  background-color: var(--primary-red-100);
+  color: var(--primary-brown-100);
+}

@@ -31,6 +31,14 @@
 }
 
 /* Mid Navbar */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
 .nav-mid {
     display: flex;
     align-items: center;
@@ -42,8 +50,9 @@
 .nav-mid .heading {
     padding: 2rem;
     text-decoration: none;
-    margin-left: 40rem;
-
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30rem;
 }
 
 .nav-icons {
@@ -51,6 +60,17 @@
     gap: 10px;
     cursor: pointer;
     position: relative;
+}
+
+/* Search  Bar  */
+
+.search-input {
+    padding: 5px 20px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    outline: none;
 }
 
 /* Icon Container */
@@ -134,4 +154,10 @@
     .nav ul li a {
         font-size: 0.9rem;
     }
+}
+
+
+.active-link {
+    color: var(--primary-green-900);
+    font-weight: bold;
 }

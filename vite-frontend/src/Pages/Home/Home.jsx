@@ -15,16 +15,16 @@ function Home() {
 
       {/* Image Slider  */}
       <div className="image-slider">
-        <img src={`${import.meta.env.BASE_URL}assets/img-homeSection.jpg"`}></img>
+        <img src={`${import.meta.env.BASE_URL}assets/img-homeSection.jpg`}></img>
       </div>
 
       {/* Certificate  */}
       <div className="container">
         <div className="inner-container">
-          <img src='.\assets\img-national_amblem.svg' alt="national" />Ministry of AYUSH
+          <img src={`${import.meta.env.BASE_URL}assets/img-national_amblem.svg`} alt="national" />Ministry of AYUSH
         </div>
         <div className="inner-container">
-          <img src=".\assets\img-FDA.svg" alt="FDA" />USFDA approved
+          <img src={`${import.meta.env.BASE_URL}assets/img-FDA.svg`} alt="FDA" />USFDA approved
         </div>
       </div>
 

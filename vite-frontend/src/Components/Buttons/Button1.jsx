@@ -1,7 +1,7 @@
 import React from 'react'
 import './Button.css';
 
-function Button1({text, bgColor, textColor, height, width, bgColorhover, textColorhover}) {
+function Button1({text, bgColor, textColor, height, width, bgColorhover, textColorhover, onClick}) {
   return (
     <button style={{
         backgroundColor: bgColor,
@@ -10,6 +10,7 @@ function Button1({text, bgColor, textColor, height, width, bgColorhover, textCol
     className='button1'
     onMouseOver={(e) => (e.target.style.backgroundColor = bgColorhover)}
     onMouseOut={(e) => (e.target.style.backgroundColor = bgColor)}
+    onClick={onClick}
     >{text}</button>
   )
 }

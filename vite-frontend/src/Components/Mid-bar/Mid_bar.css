@@ -24,3 +24,10 @@
         font-size: 1.3rem;
         font-family: var(--font-Krub);
 }
+
+.line {
+        display: block;
+        width: 110rem;
+        background-color: black;
+        height: 0.01rem;
+}

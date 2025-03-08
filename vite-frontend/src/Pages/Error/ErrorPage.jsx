@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import "./ErrorPage.css";
 import Button1 from "../../Components/Buttons/Button1";
 import Logo from "../../Components/Logo/logo";
 
 function ErrorPage() {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="error-container">
@@ -20,9 +22,7 @@ function ErrorPage() {
                         <p className="error-description">
                             The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
                         </p>
-                        <Link to="/">
-                            <Button1 text={'Go Back Home'} bgColor={'#3A633C'} textColor={'#FFF7E2'} height={'3rem'} width={'8rem'} bgColorhover={'#264228'} />
-                        </Link>
+                        <Button1 onClick={() => navigate('/Ayurveda-Hub-Frontend/')} text={'Go Back Home'} bgColor={'#3A633C'} textColor={'#FFF7E2'} height={'3rem'} width={'8rem'} bgColorhover={'#264228'} />
                     </div>
                 </div>
             </div>
