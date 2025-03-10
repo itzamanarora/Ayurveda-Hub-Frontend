@@ -41,7 +41,10 @@
 /* 📱 Mobile (max 600px) */
 @media (max-width: 600px) {
   .horizontal-bar {
-        font-size: 0.6rem;
+    font-size: 0.6rem;
+  }
+  .horizontal-bar-sale {
+    font-size: 0.6rem;
   }
 
   .line {

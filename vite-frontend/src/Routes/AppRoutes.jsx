@@ -5,18 +5,24 @@ import Home from '../Pages/Home/Home';
 import Footer from '../Components/Footer/Footer';
 import ErrorPage from '../Pages/Error/ErrorPage';
 import Products from '../Pages/Products/Products';
+import BottomNavbar from '../Components/Navbar/BottomNavbar';
+import ScrollToTop from '../Components/Scroll/ScrollToTop';
+import Chatbot from '../Components/Chatbot/Chatbot';
 
 function AppRoutes() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route
                     path='/Ayurveda-Hub-Frontend/'
                     element={
                         <>
                             <NavBar />
-                            <Home />
+                            <Home key={window.location.pathname}/>
+                            <Chatbot />
                             <Footer />
+                            <BottomNavbar />
                         </>
                     }
                 />
@@ -25,14 +31,16 @@ function AppRoutes() {
                     element={
                         <>
                             <NavBar />
-                            <Products />
+                            <Products key={window.location.pathname}/>
                             <Footer />
+                            <Chatbot />
+                            <BottomNavbar />
                         </>
                     }
                 />
-                <Route 
-                    path="/Ayurveda-Hub-Frontend/*" 
-                    element={<ErrorPage />} 
+                <Route
+                    path="/Ayurveda-Hub-Frontend/*"
+                    element={<ErrorPage />}
                 />  {/* Handle Unknown Routes */}
             </Routes>
         </BrowserRouter>

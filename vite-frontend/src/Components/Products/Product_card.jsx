@@ -1,7 +1,6 @@
-import { Star, ShoppingCart, Heart } from "lucide-react";
+import { Star} from "lucide-react";
 import "./Product_Card.css";
-import Button3 from "../Buttons/Button3";
-import Card_3 from '../../Components/Card/Card_3';
+import ProductButtons from "./ProductButtons";
 
 const Product_Card = () => {
     return (
@@ -35,14 +34,7 @@ const Product_Card = () => {
             </div>
 
             {/* Actions */}
-            <div className="product-actions">
-                <div className="wishlist-action">
-                    <Button3 />
-                </div>
-                <button className="add-to-cart">
-                    <ShoppingCart className="icon" /> Add to Cart
-                </button>
-            </div>
+            <ProductButtons />
         </div>
     );
 };

@@ -139,6 +139,10 @@
   .nav ul {
     display: none;
   }
+  
+  .bottom-nav {
+    display: flex !important;
+  }
 }
 
 /* 📟 Tablets (600px - 1024px) */
@@ -200,4 +204,39 @@
   .nav ul {
     gap: 40px;
   }
+}
+
+
+.bottom-nav {
+  display: none;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: -2px -2px 20px rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-green-700);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.bottom-nav ul {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.bottom-nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-nav ul li a { 
+  text-decoration: none;
+  color: var(--primary-brown-100);
+  font-family: var(--font-Judson);
 }

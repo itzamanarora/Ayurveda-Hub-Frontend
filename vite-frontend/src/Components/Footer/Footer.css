@@ -74,7 +74,7 @@
 .footer-bottom {
   background-color: var(--primary-green-700);
   color: var(--primary-brown-100);
-  text-align: left;
+  text-align: center;
   padding: 10px;
   margin-top: 20px;
   font-weight: 100;

@@ -9,26 +9,20 @@ import Line from '../../Components/Mid-bar/Line';
 function Skin() {
   return (
     <>
-      <Mid_Bar text={'Care Products'} />
+      <Mid_Bar text={'Items Loading'} />
       <div className='outer-container'>
+        <p></p>
         <div className='product-section'>
           <Loading_ProductCard />
           <Loading_ProductCard />
           <Loading_ProductCard />
           <Loading_ProductCard />
           <Loading_ProductCard />
+          <Loading_ProductCard />
           <Product_card />
           <Product_card />
           <Product_card />
           <Product_card />
-          <Product_card />
-          {/* <Loading_ProductCard />
-      <Loading_ProductCard />
-      <Loading_ProductCard />
-      <Loading_ProductCard />
-      <Loading_ProductCard />
-      <Loading_ProductCard />
-      <Loading_ProductCard /> */}
         </div>
         <Line />
         <div className='pagination'>

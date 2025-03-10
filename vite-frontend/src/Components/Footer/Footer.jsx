@@ -35,10 +35,10 @@ function Footer() {
         <div className="footer-section">
           <h3>Categories</h3>
           <ul>
-            <li><Link to={'products'}>Shop All</Link></li>
-            <li><Link to={'products'}>Hair Care</Link></li>
-            <li><Link to={'products'}>Skin Care</Link></li>
-            <li><Link to={'products'}>Health Care</Link></li>
+            <li><Link to={'/Ayurveda-Hub-Frontend/products'}>Shop All</Link></li>
+            <li><Link to={'/Ayurveda-Hub-Frontend/products?category=hair'}>Hair Care</Link></li>
+            <li><Link to={'/Ayurveda-Hub-Frontend/products?category=skin'}>Skin Care</Link></li>
+            <li><Link to={'/Ayurveda-Hub-Frontend/products?category=health'}>Health Care</Link></li>
           </ul>
         </div>
 
@@ -65,7 +65,7 @@ function Footer() {
             <li><a href="#">FAQs</a></li>
           </ul>
           <h3>Newsletter</h3>
-          <p>Subscribe to our Newsletter and join Amrutam Family today!</p>
+          <p>Subscribe to our Newsletter and join Ayurveda Hub Family today!</p>
         </div>
       </div>
 
