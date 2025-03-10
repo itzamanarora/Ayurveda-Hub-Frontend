@@ -29,3 +29,15 @@
     /* border: 1px solid var(--primary-green-900); */
   }
   
+  @media (min-width: 100px) {
+    .pagination {
+      margin-top: 10px;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .pagination button {
+      font-size: 0.75rem;
+      padding: 4px 6px;
+    }
+  }

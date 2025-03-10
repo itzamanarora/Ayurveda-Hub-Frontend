@@ -1,109 +1,180 @@
-@import url('../../Styles/global-color.css');
-@import url('../../Styles/global-fonts.css');
+@import url("../../Styles/global-color.css");
+@import url("../../Styles/global-fonts.css");
 
-/* body css  */
+/* ✅ Body CSS */
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Image Slider  */
+/* ✅ Image Slider */
 .image-slider {
-    margin: none;
-    padding: none;
-    height: auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
 .image-slider img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: auto;
 }
 
-
-/* Goverment Certification Styling  */
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    height: 30vh;
-    background-color: var(--primary-brown-100);
+/* ✅ Government Certification Section */
+.container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 2rem;
+  background-color: var(--primary-brown-100);
 }
 
-.inner-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 30%;
-    height: 100%;
-    font-size: 1.4rem;
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
 }
 
-
-/* Category Card Styling  */
-
-.card-heading{
-    font-family: var(--font-Judson);
-    font-weight: 100;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+/* ✅ Category Card Styling */
+.card-heading {
+  font-family: var(--font-Judson);
+  font-weight: 100;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card-subheading{
-    font-family: var(--font-Judson);
-    font-weight: 100;
-    color: var(--primary-grey-100);
+.card-subheading {
+  font-family: var(--font-Judson);
+  font-weight: 100;
+  color: var(--primary-grey-100);
 }
 
-.card1-container{
-    background-color: var(--primary-white-100);
-    color: var(--primary-black-100);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    gap: 50px;
-    padding: 2rem;
-    text-align: center;
-    width: auto;
+/* ✅ Cards Container */
+.card1-container,
+.card2-container {
+  background-color: var(--primary-white-100);
+  color: var(--primary-black-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  gap: 30px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
-  
-  .swiper {
-    width: 60%;
-    height: auto
-  }
-  
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
-  
-/* Community card Styling  */
-
-.card2-container{
-    background-color: var(--primary-brown-100);
-    color: var(--primary-black-100);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    gap: 50px;
-    padding: 2rem;
-    text-align: center;
-    width: auto;
+.card1-container {
+  width: 60%;
 }
 
+.card2-container {
+  background-color: var(--primary-brown-100);
+  padding: 0;
+}
+
+/* ✅ Swiper */
+.swiper {
+  width: 80%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* ✅ Card Section */
 .card-section {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/* 📱 Responsive Design */
+
+/* Mobile (max 600px) */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .inner-container {
+    width: auto;
+    font-size: 0.6rem;
+  }
+
+  .inner-container img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .card1-container,
+  .card2-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  /* ✅ Category Card Styling */ 
+  .card2-container {
+    padding: 0;
+    margin: 0;
+  }
+  .card-heading {
+    font-size: 1.5rem;
+  }
+
+  .card-subheading {
+    font-size: 0.6rem;
+  }
+  .card-section {
+    padding-bottom: 1rem;
+    gap: 0;
+  }
+}
+
+/* Tablets (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .inner-container {
+    width: 45%;
+  }
+
+  .swiper {
+    width: 70%;
+  }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+  .container {
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 5rem;
+  }
+
+  .inner-container {
+    width: 30%;
+  }
+
+  .swiper {
+    width: 100%;
+  }
 }

@@ -66,3 +66,30 @@
       background-position: 400% 0;
   }
 }
+
+@media (max-width: 600px) {
+  .skeleton-image {
+    height: 130px;
+  }
+  
+  .skeleton-text {
+    height: 6px;
+    margin: 4px 0;
+  }
+  
+  .skeleton-title {
+    height: 8px;
+  }
+  
+  .skeleton-price {
+    width: 60%;
+  }
+  
+  .skeleton-star {
+    height: 8px;
+  }
+  
+  .skeleton-button {
+    height: 2.3rem;
+  }
+}

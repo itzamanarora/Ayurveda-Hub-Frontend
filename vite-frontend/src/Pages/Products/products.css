@@ -15,3 +15,9 @@
 .pagination {
     margin-bottom: 1.5rem;
 }
+
+@media (max-width: 600px) {
+    .product-section{
+        gap: 1rem;
+    }
+}

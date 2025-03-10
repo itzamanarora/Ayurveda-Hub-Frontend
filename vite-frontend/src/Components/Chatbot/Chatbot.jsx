@@ -3,10 +3,8 @@
 // // import { X, MessageCircle } from "@phosphor-icons/react"; // ✅ Import Icons
 
 // function Chatbot() {
-
 //   return (
 //     <div className="chatbot-container">
-//       {isOpen && (
 //         <div className="chatbot-window">
 //           <div className="chatbot-header">
 //             <span>Chatbot</span>
@@ -31,7 +29,6 @@
 //             <button onClick={handleSendMessage}>Send</button>
 //           </div>
 //         </div>
-//       )}
 //       <button className="chatbot-toggle" onClick={toggleChatbot}>
 //         {/* <MessageCircle size={24} /> */}
 //         Message

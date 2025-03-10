@@ -1,33 +1,57 @@
-@import url('../../Styles/global-color.css');
-@import url('../../Styles/global-fonts.css');
+@import url("../../Styles/global-color.css");
+@import url("../../Styles/global-fonts.css");
 
 .horizontal-bar {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        height: 5vh;
-        background-color: var(--primary-green-700);
-        color: var(--primary-brown-100);
-        font-size: 1.3rem;
-        font-family: var(--font-Krub);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  background-color: var(--primary-green-700);
+  color: var(--primary-brown-100);
+  /* font-size: 1.3rem; */
+  font-family: var(--font-Krub);
+  padding: 5px;
+  text-align: center;
 }
 
 .horizontal-bar-sale {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        height: 5vh;
-        background-color: var(--primary-red-100);
-        color: var(--primary-brown-100);
-        font-size: 1.3rem;
-        font-family: var(--font-Krub);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  background-color: var(--primary-red-100);
+  color: var(--primary-brown-100);
+  /* font-size: 1.3rem; */
+  font-family: var(--font-Krub);
+  padding: 5px;
+  text-align: center;
 }
 
 .line {
-        display: block;
-        width: 110rem;
-        background-color: black;
-        height: 0.01rem;
+  display: block;
+  width: 110rem;
+  background-color: black;
+  height: 0.01rem;
+}
+
+/* ✅ Responsive Design */
+
+/* 📱 Mobile (max 600px) */
+@media (max-width: 600px) {
+  .horizontal-bar {
+        font-size: 0.6rem;
+  }
+
+  .line {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+/* 🖥️ Laptops & Large Screens (1024px and above) */
+@media (min-width: 1024px) {
 }

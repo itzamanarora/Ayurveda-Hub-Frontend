@@ -15,7 +15,7 @@ const Product_Card = () => {
 
             {/* Product Details */}
             <div className="product-details">
-                <h2 className="product-title">Product Title</h2>
+                <h2 className="product-title">----------------------------------------------------Product Title</h2>
 
                 {/* Price Section */}
                 <p className="product-price">

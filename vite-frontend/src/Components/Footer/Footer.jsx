@@ -14,7 +14,7 @@ function Footer() {
             <br />
             <a href="mailto:support@ayurvedahubs.co.in">
               <Mail size={16} style={{ display: 'inline', marginRight: '8px', marginTop: '5px' }} />
-              support@ayurvedahubs.co.in
+              support@ahubs.co.in
             </a>
             <br />
           </p>
@@ -52,7 +52,6 @@ function Footer() {
             <li><a href="#">Privacy Policy for Mobile Apps</a></li>
             <li><a href="#">Shipping and Returns Policy</a></li>
             <li><a href="#">International Delivery</a></li>
-            <li><a href="#">For Business, Hotels and Resorts</a></li>
           </ul>
         </div>
 

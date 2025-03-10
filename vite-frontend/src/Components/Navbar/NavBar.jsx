@@ -3,6 +3,7 @@ import { MagnifyingGlass, User, Heart, ShoppingCart, PhoneCall } from "@phosphor
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from '../../Components/Logo/logo'
+import Register from "../../Pages/Auth/Register";
 // import Chatbot from "../Chatbot/Chatbot";
 
 function NavBar() {
@@ -38,7 +39,7 @@ function NavBar() {
                 {cursor: 'pointer'}
               }
             />
-            <Link to={'/Ayurveda-Hub-Frontend/register'}><User size={22} color="#3B643A" weight="light" /></Link>
+            <Link to={'/Ayurveda-Hub-Frontend/register'}>{Register(true)}<User size={22} color="#3B643A" weight="light" /></Link>
 
             {/* Wishlist Icon with Count */}
             <div className="icon-container">

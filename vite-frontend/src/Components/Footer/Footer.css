@@ -1,5 +1,5 @@
-@import url('../../Styles/global-color.css');
-@import url('../../Styles/global-fonts.css');
+@import url("../../Styles/global-color.css");
+@import url("../../Styles/global-fonts.css");
 
 /* Footer styles */
 .footer {
@@ -24,7 +24,7 @@
   text-align: left;
 }
 
-.footer-section a{
+.footer-section a {
   color: var(--primary-green-700);
   text-decoration: none;
   font-size: 1rem;
@@ -78,4 +78,67 @@
   padding: 10px;
   margin-top: 20px;
   font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .footer-section a {
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+
+  .footer-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-section ul li a {
+    text-decoration: none;
+    color: var(--primary-grey-100);
+    transition: 0.3s;
+    font-family: var(--font-Judson);
+    font-size: 0.8rem;
+  }
+
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Play Store section */
+  .play-store img {
+    width: 100px;
+    margin-top: 5px;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    padding: 5px;
+    margin-top: 10px;
+  }
 }

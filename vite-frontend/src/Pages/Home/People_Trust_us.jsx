@@ -7,7 +7,7 @@ function People_Trust_us({ heading, subheading }) {
     <div className="card2-container">
       <div className="heading-container">
         <h1 className="card-heading">{heading}</h1>
-        <p className="car-subheading">{subheading}</p>
+        <p className="card-subheading">{subheading}</p>
       </div>
       <div className="card-section">
         <Link 

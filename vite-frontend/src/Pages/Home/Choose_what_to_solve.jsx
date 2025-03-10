@@ -24,8 +24,8 @@ function Choose_what_to_solve({ heading, subheading }) {
         }}  // Autoplay with delay of 3 seconds
         modules={[Autoplay]}
         breakpoints={{
-          320: { slidesPerView: 1 },   // Mobile: 1 card
-          768: { slidesPerView: 2 },   // Tablets: 2 cards
+          320: { slidesPerView: 3 },   // Mobile: 1 card
+          768: { slidesPerView: 4 },   // Tablets: 2 cards
           1024: { slidesPerView: 4 }   // Desktop: 4 cards
         }}
       >
