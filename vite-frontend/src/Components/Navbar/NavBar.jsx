@@ -46,13 +46,13 @@ function NavBar() {
             {/* Wishlist Icon with Count */}
             <div className="icon-container">
               <Link to={'/Ayurveda-Hub-Frontend/wishlist'}><Heart size={22} color="#3B643A" weight="light" /></Link>
-              <span className="count">{wishlistCount}</span>
+              <span className="count1">{wishlistCount}</span>
             </div>
 
             {/* Cart Icon with Count */}
             <div className="icon-container">
               <Link to={'/Ayurveda-Hub-Frontend/cart'}><ShoppingCart size={22} color="#3B643A" weight="light" /></Link>
-              <span className="count">{cartCount}</span>
+              <span className="count2">{cartCount}</span>
             </div>
           </div>
         </div>

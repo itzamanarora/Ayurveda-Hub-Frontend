@@ -33,39 +33,41 @@ function Chatbot() {
 
 
     return (
-        <div className="chatbot-container">
-            {isOpen && (
-                <div className="chatbot-window">
-                    <div className="chatbot-header">
-                        <span>Chatbot</span>
-                        <X size={20} onClick={toggleChatbot} style={{ cursor: "pointer" }} />
-                        {/* <button >Close</button> */}
+        <>
+            <div className="chatbot-container">
+                {isOpen && (
+                    <div className="chatbot-window">
+                        <div className="chatbot-header">
+                            <span>Chatbot</span>
+                            <X size={20} onClick={toggleChatbot} style={{ cursor: "pointer" }} />
+                            {/* <button >Close</button> */}
+                        </div>
+                        <div className="chatbot-messages">
+                            {messages.map((messages, index) => (
+                                <div key={index} className={`message ${messages.sender}`}>
+                                    <strong>{messages.sender}: </strong>
+                                    {messages.text}
+                                </div>
+                            ))}
+                        </div>
+                        <div className="chatbot-input">
+                            <input
+                                type="text"
+                                value={input}
+                                onChange={(e) => setInput(e.target.value)}
+                                placeholder="Type a message..."
+                                // ✅ Enter key support
+                                onKeyDown={(e) => e.key === 'Enter' && handleSendMessages()}
+                            />
+                            <button onClick={handleSendMessages}>Send</button>
+                        </div>
                     </div>
-                    <div className="chatbot-messages">
-                        {messages.map((messages, index) => (
-                            <div key={index} className={`message ${messages.sender}`}>
-                                <strong>{messages.sender}: </strong>
-                                {messages.text}
-                            </div>
-                        ))}
-                    </div>
-                    <div className="chatbot-input">
-                        <input
-                            type="text"
-                            value={input}
-                            onChange={(e) => setInput(e.target.value)}
-                            placeholder="Type a message..."
-                            // ✅ Enter key support
-                            onKeyDown={(e) => e.key === 'Enter' && handleSendMessages()}
-                        />
-                        <button onClick={handleSendMessages}>Send</button>
-                    </div>
-                </div>
-            )}
-            <button className="chatbot-toggle" onClick={toggleChatbot}>
-                <Chats size={24} />
-            </button>
-        </div>
+                )}
+                <button className="chatbot-toggle" onClick={toggleChatbot}>
+                    <Chats size={24} />
+                </button>
+            </div>
+        </>
     );
 }
 
