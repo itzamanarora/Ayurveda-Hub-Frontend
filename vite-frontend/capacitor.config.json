@@ -1,0 +1,6 @@
+{
+  "appId": "com.AyurvedaHub",
+  "appName": "Ayurveda Hub",
+  "webDir": "dist",
+  "bundleWebRuntime": false
+}
