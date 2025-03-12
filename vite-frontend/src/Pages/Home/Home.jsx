@@ -1,6 +1,5 @@
 import './Home.css'
 import Mid_Bar from "../../Components/Mid-bar/Mid_Bar";
-import Mid_Bar_Sale from "../../Components/Mid-bar/Mid_Bar_Sale";
 import Choose_what_to_solve from "./Choose_what_to_solve";
 import People_Trust_us  from "./People_Trust_us";
 
@@ -11,7 +10,6 @@ function Home() {
 
   return (
     <div>
-      <Mid_Bar_Sale text={'Use Code <Strong>FIRST50</Strong> - & get Flat <Strong>50% OFF</Strong> on your first Order!'} />
 
       {/* Image Slider  */}
       <div className="image-slider">

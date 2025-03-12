@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from '../../Components/Logo/logo'
 import Register from "../../Pages/Auth/Register";
 import ToolTip from "../ToolTip/ToolTip";
+import Mid_Bar_Sale from './../Mid-bar/Mid_Bar_Sale'
 
 function NavBar() {
 
@@ -68,6 +69,7 @@ function NavBar() {
           <li><NavLink to={'/Ayurveda-Hub-Frontend/contact'} className={({ isActive }) => (isActive ? "active-link" : "")}>Contact us</NavLink></li>
         </ul>
       </div>
+      <Mid_Bar_Sale text={'Use Code <Strong>FIRST50</Strong> - & get Flat <Strong>50% OFF</Strong> on your first Order!'} />
     </>
   );
 }

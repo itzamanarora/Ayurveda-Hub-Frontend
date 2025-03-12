@@ -1,4 +1,3 @@
-import React from 'react'
 import './Auth.css';
 import Model from 'react-modal';
 
