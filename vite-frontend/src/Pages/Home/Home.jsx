@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div>
-      <Mid_Bar_Sale text={'Use Code FIRST50 - & get Flat 50% OFF on your first Order!'} />
+      <Mid_Bar_Sale text={'Use Code <Strong>FIRST50</Strong> - & get Flat <Strong>50% OFF</Strong> on your first Order!'} />
 
       {/* Image Slider  */}
       <div className="image-slider">
