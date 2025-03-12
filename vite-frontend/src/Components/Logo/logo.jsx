@@ -1,9 +1,11 @@
-import React from 'react'
 import './logo.css'
+import Tooltip from "@mui/material/Tooltip";
 
 function logo() {
   return (
-    <div className='logo'>AYURVEDA HUB</div>
+    <Tooltip title={'Ayurveda Hub'} placement='right'>
+        <div className='logo'>AYURVEDA HUB</div>
+    </Tooltip>
   )
 }
 
