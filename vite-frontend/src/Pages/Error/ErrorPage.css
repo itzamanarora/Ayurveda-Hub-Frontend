@@ -224,15 +224,15 @@
 
   .container-line {
     height: 0.6rem;
-    width: 70%;
+    width: 30vw;
   }
   .container-line2 {
-    width: 75%;
+    width: 35vw;
     height: 0.6rem;
     opacity: 0.5;
   }
   .container-line3 {
-    width: 80%;
+    width: 40vw;
     height: 0.6rem;
     opacity: 0.8;
   }
@@ -250,12 +250,12 @@
   }
 
   .error-message {
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 5px;
   }
 
   .error-description {
-    font-size: 9px;
+    font-size: 12px;
     margin: 5px 0 15px;
     max-width: 250px;
   } 
