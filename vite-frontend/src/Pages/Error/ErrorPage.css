@@ -89,7 +89,7 @@
     margin-top: 0;
     padding: 25px;
   }
-  .error-container1 img{
+  .error-container1 img {
     height: 100%;
     width: 100%;
   }
@@ -133,7 +133,7 @@
   }
 }
 
-    @media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .error-container {
     text-align: center;
     margin: 0;
@@ -153,7 +153,7 @@
     margin-top: 0;
     padding: 25px;
   }
-  .error-container1 img{
+  .error-container1 img {
     height: 100%;
     width: 50%;
   }
@@ -194,11 +194,11 @@
     font-size: 9px;
     margin: 5px 0 15px;
     max-width: 250px;
-  } 
+  }
 }
 
 /* 🖥️ Laptops & Large Screens (1024px and above) */
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   .error-container {
     text-align: center;
     margin: 0;
@@ -217,22 +217,22 @@
     margin-top: 0;
     padding: 25px;
   }
-  .error-container1 img{
+  .error-container1 img {
     height: 100%;
     width: 70%;
   }
 
   .container-line {
     height: 0.6rem;
-    width: 30vw;
+    width: 70%;
   }
   .container-line2 {
-    width: 35vw;
+    width: 75%;
     height: 0.6rem;
     opacity: 0.5;
   }
   .container-line3 {
-    width: 40vw;
+    width: 80%;
     height: 0.6rem;
     opacity: 0.8;
   }
@@ -250,14 +250,13 @@
   }
 
   .error-message {
-    font-size: 24px;
+    font-size: 16px;
     margin-top: 5px;
   }
 
   .error-description {
-    font-size: 12px;
+    font-size: 9px;
     margin: 5px 0 15px;
     max-width: 250px;
-  } 
+  }
 }
-

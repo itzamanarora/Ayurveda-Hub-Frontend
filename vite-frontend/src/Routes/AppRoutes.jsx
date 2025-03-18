@@ -7,6 +7,7 @@ import Products from '../Pages/Products/Products';
 import BottomNavbar from '../Components/Navbar/BottomNavbar';
 import ScrollToTop from '../Components/Scroll/ScrollToTop';
 import Chatbot from '../Components/Chatbot/Chatbot';
+import Tooltip from "@mui/material/Tooltip";
 
 function AppRoutes() {
     return (
@@ -19,7 +20,10 @@ function AppRoutes() {
                         <>
                             <NavBar />
                             <Home key={window.location.pathname}/>
-                            <Chatbot />
+                            <Tooltip title="Chat with us">
+                                <Chatbot />
+                            </Tooltip>
+                            {/* <Chatbot /> */}
                             <Footer />
                             <BottomNavbar />
                         </>

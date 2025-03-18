@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Chatbot.css";
 import { X, Chats } from "@phosphor-icons/react"; // ✅ Import Icons
-import ToolTip from "../ToolTip/ToolTip";
 
 function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
