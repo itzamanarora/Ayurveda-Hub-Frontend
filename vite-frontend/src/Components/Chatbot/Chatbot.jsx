@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Chatbot.css";
 import { X, Chats } from "@phosphor-icons/react"; // ✅ Import Icons
+import { Tooltip } from "@mui/material";
 
 function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
@@ -62,9 +63,12 @@ function Chatbot() {
                         </div>
                     </div>
                 )}
-                <button className="chatbot-toggle" onClick={toggleChatbot}>
-                    <Chats size={24} />
-                </button>
+                <Tooltip title="Chat with us!" placement="top" arrow>
+                    <button className="chatbot-toggle" onClick={toggleChatbot}>
+                        <Chats size={24} />
+                    </button>
+                </Tooltip>
+
             </div>
         </>
     );

@@ -20,10 +20,7 @@ function AppRoutes() {
                         <>
                             <NavBar />
                             <Home key={window.location.pathname}/>
-                            <Tooltip title="Chat with us">
-                                <Chatbot />
-                            </Tooltip>
-                            {/* <Chatbot /> */}
+                            <Chatbot />
                             <Footer />
                             <BottomNavbar />
                         </>

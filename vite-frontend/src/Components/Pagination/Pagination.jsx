@@ -1,39 +1,28 @@
 import React from "react";
-import "./Pagination.css";
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+const pagination = ({ currentPage, totalPages, onPageChange }) => {
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i);
   }
 
   return (
-    <div className="pagination">
-      <button 
-        onClick={() => onPageChange(currentPage - 1)} 
-        disabled={currentPage <= 1}
-      >
-        Prev
-      </button>
-
-      {pageNumbers.map((number) => (
-        <button 
-          key={number} 
-          onClick={() => onPageChange(number)} 
-          className={currentPage === number ? "active" : ""}
-        >
-          {number}
-        </button>
-      ))}
-
-      <button 
-        onClick={() => onPageChange(currentPage + 1)} 
-        disabled={currentPage === totalPages}
-      >
-        Next
-      </button>
-    </div>
+    <Stack 
+      spacing={2}
+      sx={{
+        margin: "1% 0"
+      }}
+    >
+      <Pagination
+        count={10} 
+        hidePrevButton 
+        hideNextButton 
+        // onPageChange={}
+      />
+    </Stack>
   );
 };
 
-export default Pagination;
+export default pagination;
