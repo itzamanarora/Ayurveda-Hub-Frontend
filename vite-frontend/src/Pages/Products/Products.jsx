@@ -9,7 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Rounded_product from '../../Components/Products/Rounded_product';
 import { Box } from "@mui/material";
-import Loading_Rounded_product from '../../Components/Loading/Loading_Rounded_product';
+import Loading_Rounded_product from '../../Components/Loading/Products Card/Loading_Rounded_product';
 
 function Skin() {
   return (
@@ -41,20 +41,36 @@ function Skin() {
             width: "100%",
           }}
         >
-          {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={10}
             sx={{
-              marginRight: "7.5%"
+              marginRight: "7.5%",
+              fontSize: {xs: 8, sm: 12, md: 14},
+              height: {xs: 30, sm: 35, md: 40}
             }}
           // label="Age"
           // onChange={handleChange}
           >
-            <MenuItem value={10}>BESTSELLER</MenuItem>
-            <MenuItem value={20}>PRICE (LOWEST FIRST)</MenuItem>
-            <MenuItem value={30}>PRICE (HIGHEST FIRST)</MenuItem>
+            <MenuItem 
+              value={10}
+              sx={{
+                fontSize: {xs: 8, sm: 12, md: 14},
+              }}
+            >BESTSELLER</MenuItem>
+            <MenuItem 
+              value={20}
+               sx={{
+                fontSize: {xs: 8, sm: 12, md: 14},
+              }}
+            >PRICE (LOWEST FIRST)</MenuItem>
+            <MenuItem 
+              value={30}
+              sx={{
+                fontSize: {xs: 8, sm: 12, md: 14},
+              }}
+              >PRICE (HIGHEST FIRST)</MenuItem>
           </Select>
         </FormControl>
         <Stack
@@ -65,7 +81,7 @@ function Skin() {
             alignItems: "center",
             gap: '30px',
             flexWrap: 'wrap',
-            padding: '0 5%',
+            padding: {xs: 2, sm: 4, md: 6},
             marginBottom: "5%",
             marginTop: "3%",
           }}>

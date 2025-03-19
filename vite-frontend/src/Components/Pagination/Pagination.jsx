@@ -12,7 +12,10 @@ const pagination = ({ currentPage, totalPages, onPageChange }) => {
     <Stack 
       spacing={2}
       sx={{
-        margin: "1% 0"
+        margin: "1% 0",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
       }}
     >
       <Pagination
